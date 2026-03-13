@@ -4,7 +4,7 @@ margin:0;
 }
 
 header{
-background:#00;
+background:black;
 color:white;
 padding:150px;
 display:flex;
@@ -21,12 +21,12 @@ padding:0;
 }
 
 nav a{
-color:black;
+color:white;
 text-decoration:none;
 }
 
 .hero{
-background:#00;
+background:black;
 padding:100px;
 text-align:center;
 }
@@ -36,8 +36,8 @@ padding:40px;
 }
 
 footer{
-background:#00;
-color:black;
+background:black;
+color:white;
 text-align:center;
 padding:20px;
 }
