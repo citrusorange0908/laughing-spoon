@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>My List Website</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Filter List</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>My List Website</h1>
-</header>
+<h1>フィルター付きリスト</h1>
 
-<main>
+<div class="filters">
+  <button onclick="filterItems('all')">すべて</button>
+  <button onclick="filterItems('fruit')">果物</button>
+  <button onclick="filterItems('vegetable')">野菜</button>
+</div>
 
-  <input type="text" id="search" placeholder="検索...">
+<ul id="itemList">
 
-  <ul id="itemList">
-    <li>アイテム1</li>
-    <li>アイテム2</li>
-    <li>アイテム3</li>
-    <li>アイテム4</li>
-  </ul>
+<li data-category="fruit">りんご</li>
+<li data-category="fruit">バナナ</li>
+<li data-category="vegetable">にんじん</li>
+<li data-category="vegetable">じゃがいも</li>
+<li data-category="fruit">オレンジ</li>
 
-</main>
+</ul>
 
 <script src="script.js"></script>
 
