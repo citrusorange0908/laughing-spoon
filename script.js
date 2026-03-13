@@ -1,20 +1,17 @@
-const search = document.getElementById("search");
+function filterItems(category){
+
 const items = document.querySelectorAll("#itemList li");
 
-search.addEventListener("keyup", function(){
+items.forEach(item => {
 
-  const keyword = search.value.toLowerCase();
+const itemCategory = item.dataset.category;
 
-  items.forEach(function(item){
-
-    const text = item.textContent.toLowerCase();
-
-    if(text.includes(keyword)){
-      item.style.display = "block";
-    }else{
-      item.style.display = "none";
-    }
-
-  });
+if(category === "all" || itemCategory === category){
+item.style.display = "block";
+}else{
+item.style.display = "none";
+}
 
 });
+
+}
